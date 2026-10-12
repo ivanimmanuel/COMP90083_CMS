@@ -1014,7 +1014,7 @@ end
     <button x="5" y="55" height="40" disableUntilTicks="false" forever="true" kind="Observer" width="200" display="go">go</button>
     <input x="5" multiline="false" y="100" height="60" variable="seed" type="number" width="100">1.0</input>
     <input x="110" multiline="false" y="100" height="60" variable="run-length" type="number" width="100">40.0</input>
-    <chooser x="5" y="165" height="60" variable="strategy" current="1" width="200" display="strategy">
+    <chooser x="5" y="165" height="60" variable="strategy" current="0" width="200" display="strategy">
       <choice type="string" value="none"></choice>
       <choice type="string" value="concentrated"></choice>
       <choice type="string" value="demand-proportional"></choice>
@@ -1075,14 +1075,14 @@ end
     <note x="876" y="668" backgroundDark="0" fontSize="11" width="290" markdown="false" height="20" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Unit protection (stage 3)</note>
     <switch x="876" y="693" height="40" on="true" variable="secure-tenure?" width="289" display="secure-tenure?"></switch>
     <switch x="876" y="738" height="40" on="true" variable="rent-discount?" width="289" display="rent-discount?"></switch>
-    <chooser x="876" y="783" height="60" variable="affordable-rent-rule" current="1" width="289" display="affordable-rent-rule">
+    <chooser x="876" y="783" height="60" variable="affordable-rent-rule" current="0" width="289" display="affordable-rent-rule">
       <choice type="string" value="market-share"></choice>
       <choice type="string" value="income-share"></choice>
     </chooser>
     <slider x="585" step="0.1" y="903" max="3" width="280" display="cost-mid" height="50" min="0.5" direction="Horizontal" default="1.0" variable="cost-mid" units="x medium"></slider>
     <slider x="586" step="0.1" y="962" max="3" width="279" display="cost-low" height="50" min="0.5" direction="Horizontal" default="0.7" variable="cost-low" units="x medium"></slider>
-    <slider x="307" step="0.05" y="1098" max="1" width="266" display="max-rent-to-income" height="51" min="0.2" direction="Horizontal" default="0.5" variable="max-rent-to-income" units="Q_Income"></slider>
-    <slider x="875" step="0.01" y="847" max="0.5" width="290" display="income-rent-share" height="51" min="0.1" direction="Horizontal" default="0.44" variable="income-rent-share" units="of income"></slider>
+    <slider x="307" step="0.05" y="1098" max="1" width="266" display="max-rent-to-income" height="51" min="0.2" direction="Horizontal" default="0.5" variable="max-rent-to-income" units="% Income"></slider>
+    <slider x="875" step="0.01" y="847" max="0.5" width="290" display="income-rent-share" height="51" min="0.1" direction="Horizontal" default="0.25" variable="income-rent-share" units="of income"></slider>
     <slider x="308" step="0.1" y="772" max="5" width="268" display="weight-queue" height="51" min="0" direction="Horizontal" default="1.0" variable="weight-queue"></slider>
     <slider x="308" step="0.5" y="607" max="10" width="269" display="weight-rent" height="51" min="0" direction="Horizontal" default="5.0" variable="weight-rent"></slider>
     <chooser x="5" y="230" height="60" variable="priority-rule" current="0" width="200" display="priority-rule">
