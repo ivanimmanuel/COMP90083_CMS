@@ -1023,8 +1023,8 @@ end
     <switch x="5" y="295" height="40" on="true" variable="induced-demand?" width="200" display="induced-demand?"></switch>
     <switch x="5" y="340" height="40" on="true" variable="rent-feedback?" width="200" display="rent-feedback?"></switch>
     <switch x="5" y="385" height="40" on="false" variable="mean-field?" width="200" display="mean-field?"></switch>
-    <slider x="5" step="0.005" y="1142" max="0.2" width="301" display="bg-target-move-prob" height="51" min="0" direction="Horizontal" default="0.15" variable="bg-target-move-prob" units="per quarter"></slider>
-    <slider x="5" step="0.001" y="1087" max="0.02" width="301" display="income-growth" height="51" min="0" direction="Horizontal" default="0.01" variable="income-growth" units="per quarter"></slider>
+    <slider x="5" step="0.005" y="1142" max="0.2" width="301" display="bg-target-move-prob" height="51" min="0" direction="Horizontal" default="0.15" variable="bg-target-move-prob"></slider>
+    <slider x="5" step="0.001" y="1087" max="0.02" width="301" display="income-growth" height="51" min="0" direction="Horizontal" default="0.01" variable="income-growth"></slider>
     <slider x="5" step="0.05" y="757" max="1.5" width="299" display="income-max" height="51" min="0.5" direction="Horizontal" default="1.0" variable="income-max" units="Scale"></slider>
     <slider x="5" step="50" y="647" max="3000" width="298" display="n-households" height="51" min="100" direction="Horizontal" default="1000.0" variable="n-households" units="Units"></slider>
     <slider x="5" step="0.05" y="568" max="1" width="298" display="affordable-rent-ratio" height="51" min="0.3" direction="Horizontal" default="0.75" variable="affordable-rent-ratio" units="Market"></slider>
@@ -1081,7 +1081,7 @@ end
     </chooser>
     <slider x="585" step="0.1" y="903" max="3" width="280" display="cost-mid" height="50" min="0.5" direction="Horizontal" default="1.0" variable="cost-mid" units="x medium"></slider>
     <slider x="586" step="0.1" y="962" max="3" width="279" display="cost-low" height="50" min="0.5" direction="Horizontal" default="0.7" variable="cost-low" units="x medium"></slider>
-    <slider x="307" step="0.05" y="1098" max="1" width="266" display="max-rent-to-income" height="51" min="0.2" direction="Horizontal" default="0.5" variable="max-rent-to-income" units="% Income"></slider>
+    <slider x="307" step="0.05" y="1098" max="1" width="266" display="max-rent-to-income" height="51" min="0.2" direction="Horizontal" default="0.5" variable="max-rent-to-income"></slider>
     <slider x="875" step="0.01" y="847" max="0.5" width="290" display="income-rent-share" height="51" min="0.1" direction="Horizontal" default="0.25" variable="income-rent-share" units="of income"></slider>
     <slider x="308" step="0.1" y="772" max="5" width="268" display="weight-queue" height="51" min="0" direction="Horizontal" default="1.0" variable="weight-queue"></slider>
     <slider x="308" step="0.5" y="607" max="10" width="269" display="weight-rent" height="51" min="0" direction="Horizontal" default="5.0" variable="weight-rent"></slider>
