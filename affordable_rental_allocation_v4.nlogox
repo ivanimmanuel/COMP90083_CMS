@@ -1185,7 +1185,7 @@ end
     <slider x="3" step="1" y="358" max="8" width="205" display="s-search-period" height="51" min="1" direction="Horizontal" default="2.0" variable="s-search-period" units="Ticks"></slider>
     <slider x="2" step="1" y="412" max="50" width="264" display="govt-homes" height="51" min="0" direction="Horizontal" default="10.0" variable="govt-homes" units="% of Households"></slider>
     <slider x="2" step="1" y="466" max="40" width="264" display="govt-homes-build-time" height="59" min="1" direction="Horizontal" default="8.0" variable="govt-homes-build-time" units="Ticks"></slider>
-    <switch x="219" y="356" height="53" on="false" variable="fixed-budget?" width="113" display="fixed-budget?"></switch>
+    <switch x="219" y="356" height="53" on="true" variable="fixed-budget?" width="113" display="fixed-budget?"></switch>
     <slider x="272" step="0.1" y="411" max="5" width="291" display="termination-hazard-coef" height="50" min="0" direction="Horizontal" default="2.0" variable="termination-hazard-coef"></slider>
     <slider x="338" step="0.001" y="356" max="0.2" width="225" display="termination-hazard-base" height="50" min="0" direction="Horizontal" default="0.006" variable="termination-hazard-base"></slider>
     <chooser x="271" y="465" height="60" variable="affordable-rent-rule" current="0" width="292" display="affordable-rent-rule">
@@ -1303,7 +1303,7 @@ sum [non-target-occupied] of patches with [tier = 0]</monitor>
     <monitor x="1202" precision="3" y="8" height="60" units="%" fontSize="11" width="211" display="displacements per household">displaced-share * 100</monitor>
     <monitor x="1048" precision="3" y="357" height="60" fontSize="11" width="146" display="units delivered">units-delivered-total</monitor>
     <monitor x="1048" precision="3" y="422" height="60" fontSize="11" width="146" display="path length">path-length</monitor>
-    <chooser x="5" y="165" height="60" variable="strategy" current="0" width="200" display="strategy">
+    <chooser x="5" y="165" height="60" variable="strategy" current="3" width="200" display="strategy">
       <choice type="string" value="none"></choice>
       <choice type="string" value="concentrated"></choice>
       <choice type="string" value="demand-proportional"></choice>
